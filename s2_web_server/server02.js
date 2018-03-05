@@ -8,10 +8,13 @@ const hbs = require('hbs');
 
 const fs = require('fs');
 
+// heroku port config
+const port = process.env.PORT || 3000;
+
 var app = express();
 
 
-console.log(__dirname); ///Users/zhoupengkai/Desktop/Node/Node0305Express/s2_web_server
+console.log('xx',__dirname); ///Users/zhoupengkai/Desktop/Node/Node0305Express/s2_web_server
 
 //**************  handlebar ********************
 
@@ -42,7 +45,7 @@ app.use((req,res,next)=>{
 
     var log = `${now} -- Request: ${req.url}`;
 
-    fs.appendFile('server.log',log + '\n',(error)=>{
+    fs.appendFile('log_server.log',log + '\n',(error)=>{
 
     });
 
@@ -88,6 +91,6 @@ app.get('/set',(req,res)=>{
 
 })
 
-app.listen(3000,()=>{
-    console.log('Server start port 3000');
+app.listen(port,()=>{
+    console.log(`Server start port ${port}` );
 })
