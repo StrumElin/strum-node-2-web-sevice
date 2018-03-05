@@ -8,21 +8,26 @@ const hbs = require('hbs');
 
 const fs = require('fs');
 
+var path = require("path");
+
 // heroku port config
 const port = process.env.PORT || 3000;
 
 var app = express();
 
 
-console.log('xx',__dirname); ///Users/zhoupengkai/Desktop/Node/Node0305Express/s2_web_server
+//console.log('xx',__dirname+'../..' +'/views/partials'); ///Users/zhoupengkai/Desktop/Node/Node0305Express/s2_web_server
+
+console.log('xxx',path.join(__dirname, '../', '/views/partials'));
 
 //**************  handlebar ********************
 
 //使用 handlebars 的 partial 局部模块  注意不要加  s2_web_server
-hbs.registerPartials(__dirname + '/views/partials');
+//hbs.registerPartials('/views/partials');
+hbs.registerPartials(path.join(__dirname, '../', '/views/partials'));
 
 // hbs 文件必须都放置在  views  文件夹中 ,view2 中的set 无法被 render
-hbs.registerPartials(__dirname + '/views2');
+//hbs.registerPartials(__dirname + '/views2');
 
 //加入模板
 app.set('view engine','hbs');

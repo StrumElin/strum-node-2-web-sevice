@@ -68,7 +68,17 @@ app.listen(port,()=>{
 测试:  npm start
 
 运行
-heroku create
+1:
+命令:heroku create
+
+命令: heroku create
+>Creating app... done, ⬢ floating-meadow-79905
+>https://floating-meadow-79905.herokuapp.com/ | https://git.heroku.com/floating-meadow-79905.git
+
+2: 将 github 代码 push 到 heroku上去
+git push heroku
+
+3: heroku open  会打开默认的url
 
 
 
