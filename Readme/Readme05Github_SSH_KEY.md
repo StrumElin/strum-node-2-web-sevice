@@ -107,3 +107,6 @@ Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
 Hi StrumElin! You've successfully authenticated, but GitHub does not provide shell access.
 
+然后
+git remote add origin https://github.com/StrumElin/strum-node-2-web-sevice.git
+git push -u origin master
