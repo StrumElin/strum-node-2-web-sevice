@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<h1>{{pateTitle}}</h1>-->
+
+    {{> header}}
+
+    <!--第一个是 helper函数 在server02.js 中定义  第二个是.get 传入的值-->
+    <p>{{helperUppercase welcomeMessage}}</p>
+
+
+    {{> footer}}
+
+</body>
+</html>
