@@ -75,6 +75,12 @@ app.listen(port,()=>{
 >Creating app... done, ⬢ floating-meadow-79905
 >https://floating-meadow-79905.herokuapp.com/ | https://git.heroku.com/floating-meadow-79905.git
 
+在官网弄 简单的
+
+ https://floating-meadow-79905.herokuapp.com/
+ https://polar-basin-68785.herokuapp.com/
+
+
 2: 将 github 代码 push 到 heroku上去
 git push heroku
 

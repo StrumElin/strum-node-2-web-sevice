@@ -2,6 +2,16 @@
  * Created by zhoupengkai on 2018/3/5.
  */
 
+//  以后使用 npm start
+// package.json
+    /*
+     "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start":"node s2_web_server/server02.js"
+     },
+     */
+
+
 const express = require('express');
 
 const hbs = require('hbs');
@@ -82,6 +92,15 @@ app.get('/about',(req,res)=>{
 
     res.render('about.hbs',{
         pateTitle:'About Page',
+        //currentYear: new Date().getFullYear()
+    });
+
+})
+
+app.get('/project',(req,res)=>{
+
+    res.render('project.hbs',{
+        pateTitle:'Project Page',
         //currentYear: new Date().getFullYear()
     });
 
