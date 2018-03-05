@@ -110,3 +110,5 @@ Hi StrumElin! You've successfully authenticated, but GitHub does not provide she
 然后
 git remote add origin https://github.com/StrumElin/strum-node-2-web-sevice.git
 git push -u origin master
+
+strum good
